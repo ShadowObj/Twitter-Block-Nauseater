@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Twitter Block Nauseater
 // @homepage    https://github.com/ShadowObj/Twitter-Block-Nauseater
-// @icon        https://raw.githubusercontent.com/ShadowObj/Twitter-Block-Nauseater/master/imgs/icon.svg
+// @icon        https://cdn.jsdelivr.net/gh/ShadowObj/Twitter-Block-Nauseater@master/imgs/icon.svg
 // @version     1.2.0
 // @description One-click block all the nauseaters in the comment area.
 // @description:zh-CN 共享黑名单, 一键拉黑所有令人生厌的反跨蝈蝻

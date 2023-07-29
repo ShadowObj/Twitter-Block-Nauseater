@@ -1,6 +1,6 @@
 ## 使用方式：
-1. 在Greasyfork上安装脚本 (没有TamperMonkey等脚本管理器的按 [该向导](https://greasyfork.org/zh-CN) 安装)
-2. 用电脑打开列表成员页 -> [点击跳转到列表成员页](https://twitter.com/i/lists/1685183911725252608)
+1. [点击安装脚本](https://cdn.jsdelivr.net/gh/ShadowObj/Twitter-Block-Nauseater@install/user.js) (没有TamperMonkey等脚本管理器的按 [该向导](https://greasyfork.org/zh-CN) 安装)
+2. 打开列表成员页 -> [点击跳转到列表成员页](https://twitter.com/i/lists/1685183911725252608)
 4. **点击左上角 -> 屏蔽所有Nauseater**
 
 ## 源码地址:
