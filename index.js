@@ -1,16 +1,13 @@
 // ==UserScript==
 // @name        Twitter Block Porn
-// @homepage    https://github.com/daymade/Twitter-Block-Porn
-// @icon        https://raw.githubusercontent.com/daymade/Twitter-Block-Porn/master/imgs/icon.svg
+// @homepage    https://github.com/ShadowObj/Twitter-Block-Nauseater
+// @icon        https://raw.githubusercontent.com/ShadowObj/Twitter-Block-Nauseater/master/imgs/icon.svg
 // @version     1.2.0
-// @description One-click block all the yellow scammers in the comment area.
-// @description:zh-CN 共享黑名单, 一键拉黑所有黄推诈骗犯
-// @description:zh-TW 一鍵封鎖評論區的黃色詐騙犯
-// @description:ja コメントエリアのイエロースキャマーを一括ブロック
-// @description:ko 댓글 영역의 노란색 사기꾼을 한 번에 차단
-// @description:de Alle gelben Betrüger im Kommentarbereich mit einem Klick blockieren.
+// @description One-click block all the nauseaters in the comment area.
+// @description:zh-CN 共享黑名单, 一键拉黑所有令人生厌的反跨蝈蝻
+// @description:zh-TW 共享黑名單，一鍵拉黑所有令人生厭的反跨蟈蝻
 // @author      daymade
-// @source      forked from https://github.com/E011011101001/Twitter-Block-With-Love
+// @source      forked from https://github.com/daymade/Twitter-Block-Porn
 // @license     MIT
 // @run-at      document-end
 // @grant       GM_registerMenuCommand
@@ -27,11 +24,7 @@
 /* global axios $ Qs */
 
 const menu_command_list = GM_registerMenuCommand('打开共享黑名单 ①', function () {
-  const url = 'https://twitter.com/i/lists/1677334530754248706/members'
-  GM_openInTab(url, {active: true})
-}, '');
-const menu_command_member = GM_registerMenuCommand('打开共享黑名单 ②', function () {
-  const url = 'https://twitter.com/i/lists/1683810394287079426/members'
+  const url = 'https://twitter.com/i/lists/1685183911725252608/members'
   GM_openInTab(url, {active: true})
 }, '');
 
@@ -146,19 +139,19 @@ const menu_command_member = GM_registerMenuCommand('打开共享黑名单 ②', 
   const translations = {
     en: {
       lang_name: 'English',
-      block_btn: 'Block all Scammers',
-      block_test_btn: 'Test block top 10 Scammers',
-      block_success: 'All scammers blocked!',
-      block_test_success: 'Top 10 scammers test blocked successfully!',
+      block_btn: 'Block all Nauseaters',
+      block_test_btn: 'Test block top 10 Nauseaters',
+      block_success: 'All Nauseaters blocked!',
+      block_test_success: 'Top 10 Nauseaters test blocked successfully!',
       export_btn: 'Export',
       export_success: 'Export successful!',
     },
     'en-GB': {
       lang_name: 'British English',
-      block_btn: 'Block all Scammers',
-      block_test_btn: 'Test block top 10 Scammers',
-      block_success: 'All scammers blocked!',
-      block_test_success: 'Top 10 scammers test blocked successfully!',
+      block_btn: 'Block all Nauseaters',
+      block_test_btn: 'Test block top 10 Nauseaters',
+      block_success: 'All Nauseaters blocked!',
+      block_test_success: 'Top 10 Nauseaters test blocked successfully!',
       export_btn: 'Export',
       export_success: 'Export successful!',
     },
@@ -179,52 +172,7 @@ const menu_command_member = GM_registerMenuCommand('打开共享黑名单 ②', 
       block_test_success: '前10名詐騙犯測試封鎖成功！',
       export_btn: '導出',
       export_success: '導出成功！',
-    },
-    ja: {
-      lang_name: '日本語',
-      block_btn: 'すべての詐欺師をブロック',
-      block_test_btn: 'トップ10詐欺師をテストブロック',
-      block_success: 'すべての詐欺師がブロックされました！',
-      block_test_success: 'トップ10の詐欺師がテストブロックされました！',
-      export_btn: 'エクスポート',
-      export_success: 'エクスポート成功！',
-    },
-    vi: {
-      lang_name: 'Tiếng Việt',
-      block_btn: 'Chặn tất cả scammers',
-      block_test_btn: 'Thử chặn top 10 scammers',
-      block_success: 'Tất cả scammers đã bị chặn!',
-      block_test_success: 'Đã thành công chặn thử top 10 scammers!',
-      export_btn: 'Xuất',
-      export_success: 'Xuất thành công!',
-    },
-    ko: {
-      lang_name: '한국어',
-      block_btn: '모든 사기꾼을 차단',
-      block_test_btn: '테스트 차단 사기꾼 상위 10',
-      block_success: '모든 사기꾼이 차단되었습니다!',
-      block_test_success: '상위 10 사기꾼 테스트 차단 성공!',
-      export_btn: '내보내기',
-      export_success: '내보내기 성공!',
-    },
-    de: {
-      lang_name: 'Deutsch',
-      block_btn: 'Alle Betrüger blockieren',
-      block_test_btn: 'Testblock Top 10 Betrüger',
-      block_success: 'Alle Betrüger wurden blockiert!',
-      block_test_success: 'Top 10 Betrüger erfolgreich getestet und blockiert!',
-      export_btn: 'Exportieren',
-      export_success: 'Export erfolgreich!',
-    },
-    fr: {
-      lang_name: 'French',
-      block_btn: 'Bloquer tous les escrocs',
-      block_test_btn: 'Test de blocage top 10 escrocs',
-      block_success: 'Tous les escrocs sont bloqués !',
-      block_test_success: 'Test de blocage des 10 premiers escrocs réussi !',
-      export_btn: 'Exporter',
-      export_success: 'Exportation réussie !',
-    },
+    }
   }
 
   let i18n = translations[lang]
@@ -357,70 +305,8 @@ const menu_command_member = GM_registerMenuCommand('打开共享黑名单 ②', 
     const listId = get_list_id()
     const members = await fetch_list_members_id(listId)
 
-    // 加急名单: 特别活跃/拉黑我/来挑衅的黄推
+    // 加急名单: 特别活跃/拉黑我/来挑衅的蝈蝻
     const special_scammers = [
-      "1588494438888013824",
-      "1651248919815532544",
-      "2972451170",
-      "707799803",
-      "2169405224",
-      "1640266734895521794",
-      "2592579935",
-      "1655966818715025408",
-      "1056599336",
-      "2697243901",
-      "1349896547870367747",
-      "1661096624934862848",
-      "1401414397021417472",
-      "1519117582112108544",
-      "3187289986",
-      "1596351809156575232",
-      "1082326572",
-      "1625868873319989250",
-      "406631114",
-      "2532826655",
-      "3193923902",
-      "1662257575197548545",
-      "3168034086",
-      "719941638",
-      "1625868873319989250",
-      "3219505345",
-      "2422331525",
-      "1278442885",
-      "1596640616972259328",
-      "764311604",
-      "1622925598808223744",
-      "491053241",
-      "1485243105737871366",
-      "1590272269913231361",
-      "707799803",
-      "3340694236",
-      "1636562589420519424",
-      "758216593",
-      "3159185881",
-      "1636539550083461120",
-      "2565780797",
-      "156530386",
-      "1632826987776704512",
-      "546231012",
-      "4618689152",
-      "314713909",
-      "764311604",
-      "2230998305",
-      "3340694236",
-      "1637118222636908544",
-      "3219700285",
-      "2422331525",
-      "2565780797",
-      "892492872",
-      "1553957596632977408",
-      "1636163498379218944",
-      "156530386",
-      "3119532162",
-      "1655367614942818304",
-      "161486183",
-      "3159185881",
-      "1655367412253065217"
     ]
 
     members.concat(special_scammers).slice(0, 300).forEach(block_user)
@@ -675,7 +561,7 @@ const menu_command_member = GM_registerMenuCommand('打开共享黑名单 ②', 
     const TWITTER_SVG_CONTENT = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1d9bf0" class="bi bi-twitter" viewBox="0 0 16 16">
         <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
     </svg>`;
-    const TOOLTIP_TEXT = "已被 Twitter-Block-Porn 替换为纯净版";
+    const TOOLTIP_TEXT = "已被 Twitter-Block-Nauseaters 替换为纯净版";
     const TOOLTIP_ID = "tooltip42";
 
     // Function to create new SVG element
