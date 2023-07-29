@@ -17,9 +17,7 @@
 因为都在同一页面的同一位置注入了按钮，同时开启可能会导致不可知的bug
 
 ---
-<img src="imgs\icon.svg" width="512" />
+<img src="imgs\flag.svg" width="512" />
 
-<center><font color="#5bcffa">All are born free and equal.</font></center>
-
-<center><font color="#f5abb9">生而自由，一律平等</font></center>
+All are born free and equal.	生而自由，一律平等
 

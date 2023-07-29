@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name        Twitter Block Porn
+// @name        Twitter Block Nauseater
 // @homepage    https://github.com/ShadowObj/Twitter-Block-Nauseater
 // @icon        https://raw.githubusercontent.com/ShadowObj/Twitter-Block-Nauseater/master/imgs/icon.svg
 // @version     1.2.0
 // @description One-click block all the nauseaters in the comment area.
 // @description:zh-CN 共享黑名单, 一键拉黑所有令人生厌的反跨蝈蝻
 // @description:zh-TW 共享黑名單，一鍵拉黑所有令人生厭的反跨蟈蝻
-// @author      daymade
+// @author      ShadowObj
 // @source      forked from https://github.com/daymade/Twitter-Block-Porn
 // @license     MIT
 // @run-at      document-end
